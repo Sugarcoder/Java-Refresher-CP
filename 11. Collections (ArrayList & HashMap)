@@ -1,0 +1,43 @@
+- Collection = A dynamic list of data stored within your application. 
+
+- Many different types, such as: lists (ordered elements), sets (unordered unique, non-duplicate elements), and maps (attaches an arbitrary key to an arbitrary value)
+
+- Different collections store lists of data in ways suited to various types of tasks. 
+
+- Collections contain certain shared methods (through interfaces), such as add, remove and size. 
+
+- The two most important collections: ArrayList and HashMap 
+
+/**********************************/ 
+
+ArrayList: 
+
+- A dynamically-sized array of items that can have items added or removed. 
+
+- Similar to an array, except with more methods available and with no fixed size.
+
+ArrayList<String> list = new ArrayList<String>(); 
+
+
+- Adding a new item to the list: 
+
+list.add("Tool"); 
+
+- Removing an item from the list: 
+
+list.remove(1); 
+
+
+Example: 
+
+ArrayList<String> stringList = new ArrayList<String>(); 
+  stringList.add("Item"); 
+
+for(int i = 0; i<StringList.size(); i++) {
+  String item = stringList.get(i);
+  System.out.println("Item" + i + ": " + item);
+}
+
+stringList.remove(0);
+
+System.out.println("ArrayList is " + stringList.size() + "items long!"); 
