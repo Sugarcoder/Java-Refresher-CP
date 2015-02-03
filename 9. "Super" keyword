@@ -1,0 +1,27 @@
+- Use 'super' to reference the parent class from within an inherited subclass. 
+
+- 'Super' keyword is used to access parent class methods or constructors when overriding methods. 
+
+Example: 
+
+public class iOSDevice {
+  public iOSDevice(String name) {
+    this.name = name;
+  }
+}
+
+public void startDevice() {
+  // starts various things
+}
+
+public class iPhone extends iOSDevice {
+  public iPhone(String name, String provider) {
+    super(name);                                    // runs the parent constructor
+    this.provider = provider;
+  }
+  
+  public void startDevice() {
+    super.startDevice();                   // runs the parent version
+    connectedCellTower();
+  }
+}
