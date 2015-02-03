@@ -1,0 +1,47 @@
+// ANONYMOUS CLASSES
+
+/* 
+- Is a class created on the fly without a specified name. 
+
+- Created inline without a name, and can be passed as parameters into methods. 
+
+- Often used in Android when you want to define complex behavior as a parameter for a method. 
+
+- They are 'inline classes' defined as part of a large block of code. 
+
+- Can be created based on any existing class or interface. 
+
+*/ 
+
+// Example #1:
+
+Button aButton = getMyButton(); 
+aButton.setOnClickListener(new setOnClickListener() {
+
+	public void onClick(View v) {
+		// user clicked my button, do something here! 
+		System.out.println("clicked!");
+	}
+
+});
+
+/**************************************/
+
+// Example #2: 
+
+public class MobileDevice {
+
+	// define click handler using anonymous class
+
+	public MobileDevice() {
+		// setup click handling in constructor 
+
+		Button b = getButton(); 
+		b.setOnClickListener(new setOnClickListener() {
+			public void onClick(View v) {
+				System.out.println("clicked!");
+			}
+
+		});
+	}
+}
