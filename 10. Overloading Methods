@@ -1,0 +1,23 @@
+- Overloading allows multiple versions of a method with different parameters. 
+
+Example: 
+
+public class iPhone extends iOSDevice {
+  public void setAlarm(String title, Time time, String note) {
+    Alarm a = new Alarn(); 
+    a.title = title; 
+    a.time = time; 
+    a.note = note;
+  }
+  
+  public void setAlarm(String title, Time time) {
+    setAlarm(title, time, "");
+  }
+  
+  public void setAlarm(Time time) {
+    setAlarm("Alarm", time);
+  }
+}
+
+iPhone phone = new iPhone; 
+phone setAlarm(new Time("7 pm"));
