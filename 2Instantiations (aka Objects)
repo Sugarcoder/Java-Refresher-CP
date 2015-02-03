@@ -1,0 +1,35 @@
+- Created using the 'new' keyword 
+
+Example: 
+
+// Declaration
+
+User u; 
+
+// Instantiation (allocates memory)
+
+u = new User(); 
+
+u.name="John";
+u.printName(); 
+
+// My name is John
+
+
+- A class has many objects (instances)
+
+Example: 
+
+public class User {
+  // fields and methods defining a User
+}
+
+User joe = new User(); 
+joe.name = "Joe"; 
+joe.printName();
+
+
+User billy = new User(); 
+billy.name = "Billy";
+billy.printName(); 
+
