@@ -1,0 +1,3 @@
+- Public: accessible by all classes everywhere in the app.
+
+- private: only accessible within its own class. 
