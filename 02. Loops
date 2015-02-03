@@ -1,0 +1,92 @@
+// LOOPS 
+
+/* 
+- Used in cases where a task must be repeated many times.
+(Enumerations - access arrays, 
+ Animations - moving drawn objects, 
+ Displaying data (printing tabular data) 
+
+*/ 
+
+/******************************/ 
+
+ // FOR LOOP: 
+
+ for (int i = 0; i < 10; i = i+1) {
+ 	sum = sum + numbs[i];
+ }
+
+
+ // Example #1: 
+
+int[] nums = new int[] {5,6,7,8,9,10};
+int sum = 0; 
+
+for (int i = 0; i < nums.length; i = i+1) {
+	sum = sum + nums[i]; 
+}
+
+System.out.println(sum);      
+
+
+// Example #2: 
+
+String[] names = new String[] {"Amy", "Miki"};
+for (int i = 0; i < names.length; i = i+1) {
+	System.out.println("Hey " + names[i] + "!");
+}
+
+// Hey Amy!
+// Hey Miki! 
+
+
+// Example #3: 
+
+// count from 1 to 100...
+
+for (int i = 1; i  < 100; i = i+1) {
+	System.out.println(i);
+}
+
+/**************************************/ 
+
+// WHILE
+
+// 'While' loops execute code repeatedly until a specified condition is met. 
+
+// Like this...
+
+int count = 1; 
+
+while (count <= 100) {
+	System.out.println(count);
+	count = count + 1;
+}
+
+
+// Example #1: 
+
+int currentNum = 1; 
+int sum = 0; 
+
+while (currentNum < 100) {
+	sum = sum + currentNum;
+	currentNum = currentNum + 1;
+}
+
+System.out.println("The sum of the numbers from 1 to 100 is " + sum + ".");
+
+
+// Example #2: 
+
+static int count2Div(int num) {
+	int count >= 0;     // count how many divisions we've done
+	while (num >= 1) {
+		num = num / 2;
+		count++;
+	}
+	return count;
+}
+
+System.out.println(count2Div(40));      // 6
+
