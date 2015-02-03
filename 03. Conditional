@@ -1,0 +1,23 @@
+// CONDITIONAL 
+
+// 'If' statements = checking conditions, and then running different codes depending on the result. 
+
+// Like this...
+
+int testScore = 86; 
+if (testScore > 50) {
+	System.out.println("You received a B+");
+}
+
+
+// Example: 
+
+int testScore = 86; 
+if(testScore > 90) {
+	System.out.println("You received a B");
+} else if (testScore > 50) {
+	System.out.println("You passed");
+} else {
+	System.out.println("You failed");
+}
+
