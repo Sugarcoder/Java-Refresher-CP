@@ -1,0 +1,123 @@
+// METHODS (aka Functions) 
+
+/* 
+- Small units of code that can be named, and then run within a program. 
+- A simple way to group code statements together. 
+- Methods are a name (ex. printInfo), assigned to label the lines of code within braces. 
+- Methods cannot be defined within other methods, and are created separate from one another. 
+- Methods are always defined within a class, but not defined within other methods. 
+
+*/
+
+
+// Example #1:
+
+public void printInfo() {
+	System.out.println("My name is Amy");
+	System.out.println("My favorite color is purple");
+}
+
+// Calling a method from 'main'
+
+printInfo(); 
+
+
+// Example #2 (Method execution):
+
+public static void main(String args[]) {
+	// Calling a method
+
+	println("Step 1");
+	printInfo(); 
+	println("Step 3");
+}
+
+public void printInfo() {
+	println("My name is Amy");
+	println("My favorite color is purple");
+}
+
+
+
+/***************************************/
+
+// DEFINING VS. CALLING 
+
+/* 
+- Defining = Giving a group of code statements a name, but does not make the code run (unless called in 'main'). 
+- Calling = A method is when you run the code for a method by referencing the name. 
+*/ 
+
+// Definining: 
+
+public void someMethodName() {
+	int num = 3; 
+	System.out.println("The number is " + num);
+}
+
+// Calling: 
+
+public static void main(String args[]) {
+	// running the code in a method
+	someMethodName();
+}
+
+
+/***********************************/
+
+// Methods can accept values, called 'parameters', which can be accessed when run. 
+
+// Like this...
+
+public void sayHello(String someName) {
+	System.out.println("Hi" + someName);
+}
+
+sayHello("Amy");    // Hi Amy
+
+
+/***********************************/
+
+// Methods can 'return' back a value after completing a run. 
+
+// Like this... 
+
+public int add(int n1, int n2) {
+	return n1 + n2;
+}
+
+int sum = add(5, 6);    // sum is assigned to return value
+System.out.println(sum);    // 11 
+
+// Example: 
+
+public String madLibs(String adj, String noung) {
+	String sentence = "Is that a " + adj + "" + noun + "?";
+	return sentence;
+}
+
+System.out.println(madLibs("mad", "cow"));    // Is that a mad cow?
+
+
+
+// RETURNING = 'returns' a value into a variable. PRINTING does not return. 
+
+
+// Method Example: 
+
+public void printFullName(String firstName, String lastName) {
+	System.out.println("Nice to meet you " + firstName + "" + lastName);
+}
+
+printFullName("Amy", "Smith");    // Nice to meet you Amy Smith
+
+public String askAboutJob(String name, String job) {
+	return name + ", I see you work as a " + job + "?";
+}
+
+String sentence = askAboutJob("Amy", "Consultant");
+System.out.println(sentence);    // Amy, I see you work as a Consultant?
+
+sentence = askAboutJob("Miki", "Programmer");
+System.out.println(sentence);    // Miki, I see you work as a Programmer?
+
