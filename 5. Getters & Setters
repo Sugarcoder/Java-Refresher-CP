@@ -1,0 +1,22 @@
+- To access information 
+
+Example: 
+
+public class User {
+  private String firstName;
+  private String lastName; 
+  public String getName() {
+    return firstName + "" + lastName; 
+  }
+  
+  public void setName(String firstName, String lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+}
+
+
+User u = new User();
+u.setName("Billy", "Joel");
+System.out.println(u.getName());     // Billy Joel
