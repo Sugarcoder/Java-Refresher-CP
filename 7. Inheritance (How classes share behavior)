@@ -1,0 +1,43 @@
+- Class inheritance shares common fields and methods across related classes.
+
+- Inheritance = two related class definitions will share the same blueprint variables and methods
+
+Example #1 (customer and seller - share many properties, but have different roles): 
+
+public class User {
+  // attributes and methods defining a user
+}
+
+public class Customer extends User {
+  // attributes and methods defining a customer
+}
+
+public class Seller extends User {
+  // attributes and methods defining a seller
+}
+
+
+
+Example #2: 
+
+public calss iOSDevice {
+  protected String version = "4G"; 
+  protected String driveSize = "16 GB";
+  protected String screenSize; 
+  
+  public String getVersion() {
+    return version;
+  }
+  
+  public class iPhone extends iOSDevice {
+    public iPhone() {
+      this.screenSize = "320 x 480";
+    }
+  }
+  
+  public class iPad extends iOSDevice {
+    public iPad() {
+      this.screenSize = "768 x 1024";
+    }
+  }
+}
