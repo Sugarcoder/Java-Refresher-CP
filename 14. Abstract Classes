@@ -1,0 +1,69 @@
+// ABSTRACT CLASSES
+
+/* 
+- Is a class that cannot be directly instantiated (created), but can be inherited by other classes. 
+
+- Like an interface, but can include certain methods that are implemented while others need to be defined by the subclass. 
+
+- Can contain abstract methods, which are methods with name and arguments, but no implementation. 
+
+- Like regular classes, but they can include abstract methods (with no implementation) and cannot be created directly (only subclassesd). */ 
+
+
+// Example:
+
+public abstract class iOSDevice {
+	// declare fields
+	// declare non-abstract methods
+	// declare abstract methods (must be defined by subclass) 
+
+	abstract void shutDown(int delay);
+	abstract int getBatteryLife();
+}
+
+public class iPhone extends iOSDevice {
+	void shutDown(int delay) {
+		System.out.println("Shutting Down");
+	}
+
+	int getBatteryLife() {
+		// ... 
+	}
+}
+
+/**********************************/ 
+
+
+// ABSTRACT VS. INTERFACE
+
+// Abstract can contain fields and fully implement methods, along with abstract methods. 
+
+// Example:
+
+public abstract class MobileDevice {
+	// fields 
+
+	String name; 
+	String screenSize;
+	// implements methods
+
+	public String getScreenSize() {
+		return screenSize;
+	}
+
+	// abstract
+
+	public void startUp(); 
+	public void shutDown(int delay);
+}
+
+
+public class iOSDevice extends MobileDevice {
+	public String startUp() {
+		// ... implements startUp
+	}
+
+	public String shutDown(int delay) {
+		// ... implements shutDown
+	}
+}
