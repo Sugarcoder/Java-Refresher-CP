@@ -1,0 +1,21 @@
+- Overriding methods tweak or replaces the behavior of a method within the parent class. 
+
+- Overriding allows us to easily redefine the methods inherited from a parent class.
+
+Example: 
+
+public class iOSDevice {
+  public void startDevice() {
+    startBluetooth; 
+    startWifi;
+  }
+}
+
+public class iPhone extends iOSDevice {
+  public void startDevice() {
+    super.startDevice(); 
+    connectedCellTower();
+  }
+} 
+
+
