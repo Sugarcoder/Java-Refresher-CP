@@ -1,0 +1,31 @@
+// EXCEPTIONS
+
+/* 
+- An object that represents an unexpected event within our application. 
+
+- Creating an exception object and having it passed to the Java runtime is called, "throwing an exception". 
+
+- Exceptions are used to handle when problems arise in an application. 
+
+- Anonymous classes can be created based on any existing class or interface. 
+
+*/ 
+
+
+/***********************************/
+
+// Example: 
+
+
+PrintWriter out = null; 
+
+try {
+	System.out.println("Entering" + "try statement");
+	out = new PrintWriter(new FileWriter("OutFile.txt"));
+	out.println("Hello World");
+} catch (IOException) {
+	System.err.println("Caught Error: " + e.getMessage());
+} finally {
+	System.out.println("Closing PrintWriter");
+	out.close();
+}
