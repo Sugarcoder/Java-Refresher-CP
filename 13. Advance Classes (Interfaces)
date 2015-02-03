@@ -1,0 +1,65 @@
+// Interfaces
+
+/* Interface = A series of methods with empty bodies that can be 'implemented'
+within a class definition. Once implemented, that class has to define every method that is contained within the interface.  */ 
+
+
+// Interfaces provide a contract which guarantees that certain methods will be defined within any class that implements it. 
+
+// Example: 
+
+public interface Friendly {
+	public void sayHello();
+}
+
+public class Person implements Friendly {
+	public void sayHello() {
+		System.out.println("Hi");
+	}
+}
+
+
+// A class can actually implement multiple interfaces and follow all of their method requirements. 
+
+// Like this...
+
+public interface Friendly {
+	public void sayHello();
+}
+
+public interface Athletic {
+	public void jog(int miles); 
+}
+
+public class implements Friendly, Athletic {
+	public void sayHello() {
+		System.out.println("I just jogged " + miles + "miles");
+	}
+}
+
+// Example:
+
+public interface MobileDevice {
+	public String getScreenSize();
+}
+
+public class iOSDevice implements MobileDevice {
+	private String version = "4G";
+	private String driveSize = "16GB";
+	private String screenSize;
+
+	public String getScreenSize(){
+		return screenSize;
+	}
+}
+
+
+public class AndroidDevice implements MobileDevice {
+	private String version="4G";
+	private String driveSize="16GB";
+	private String fullScreenSize;
+
+	public String getScreenSize() {
+		return fullScreenSize;
+	}
+}
