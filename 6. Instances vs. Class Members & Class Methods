@@ -39,3 +39,48 @@ public class User {
 User billy = new User("Billy"); 
 User.sayHello();        // Hello!
 User.sayName();         // My name is Billy
+
+
+/****************************************/
+
+- 'Static' fields or methods can only call other static members, but not instance level members. 
+
+Example: 
+
+public class User {
+  static String greetingPrefix() {
+    return "My name is";
+  }
+  
+  void sayName() {
+    System.out.println(User.greetingPrefix() + name);
+  }
+  
+  static void sayHello() {
+    System.out.println("Hello");
+    sayName();               // This fails, it doen't work!
+  }
+}
+
+/*************************************/
+
+Classes Example: 
+
+public class Android {
+  private String version;
+  String driveSize; 
+  Static int screenWidth = 320;
+  
+  public Android(String version, String driveSize) {
+    this.version = version;
+    this.driveSize = driveSize;
+  }
+
+  public String getVersion() {
+    return version;
+  } 
+}
+
+Android anyAndroid = new Android("Lollipop", "16 GB"); 
+System.out.print(Android.screenWidth);    //320 
+System.out.print(Android.driveSize);      // 16 GB
