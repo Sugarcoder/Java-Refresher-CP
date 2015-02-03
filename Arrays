@@ -1,0 +1,24 @@
+// ARRAYS
+
+int[] numbers = new int[10];     // creates an array of 10 ints 
+
+String[] names = {"Bob", "Amy", "Emma"};   // creates an array of 3 items
+
+// Once an array is defined, the elements can be accessed by specifying the position. 
+
+System.out.println(numbers[10]);    // prints the first element
+
+System.out.printkn(numbers[1]);     // prints the second element
+
+String title = names[0] + " and " + names[2];     // Bob and Emma
+
+
+// Arrays are accessed and modified using square brackets
+
+// Example:
+ 
+int nums[];     // declaring
+nums = new int[2];   // initializing 
+nums[0] = 5; 
+nums[1] = 6; 
+System.out.println(nums[1]);    // 6
