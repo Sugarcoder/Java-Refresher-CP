@@ -1,0 +1,71 @@
+// INNER CLASSES
+
+/* 
+- A class defined within another class. 
+
+- A part of the enclosing class, and has access to other objects, fields or methods of the parent class. 
+
+- Used as a way to organize and group classes together if they are only ever used together. 
+
+- Small "helper" classes that are used only to make a parent class work (can be hidden from public access).  
+
+- Cannot exist independently outside the outer class interface. 
+
+- Static inner classes are called "nested classes", and behave differently (no access to instance variables or methods). 
+
+*/
+
+
+// Like this: 
+
+
+public class MainGraphicalWindow() {
+	// fields
+
+	public int width = 500;
+
+	// methods 
+
+	public void drawScreen(Graphics g) {
+		MenuSection menu = new MenuSection();
+		menu.drawMenu(g);
+	}
+
+	// inner class definition
+
+	class MenuSection {
+		public void drawMenu(Graphics g) {
+			// ...
+			g.drawRect(0,0,width,100);
+		}
+	}
+}
+
+
+
+// Example: 
+
+public class MobileDevice {
+	private int width = 500; 
+	private int height = 300; 
+
+	public MobileDevice() {
+		ScreenDrawer drawer = new ScreenDrawer();
+		drawer.drawScreen(); 
+	}
+
+	// defines inner class
+
+	class ScreenDrawer {
+		void drawScreen() {
+			// draw screen 
+
+			drawBox(width, height);
+		}
+
+		void drawBox(int w, int h) {
+			// ... 
+		}
+	}
+
+}
