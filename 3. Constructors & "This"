@@ -1,0 +1,41 @@
+- Constructor methods are called when objects are created to initialize the object. 
+
+public class User {
+  // fields
+  
+  String name;
+  
+  // constructor
+  
+  public User(String name) {
+    this.name = name; 
+  }
+}
+
+
+// new user's name is initially set to "Billy" 
+
+User billy = new User("Billy");
+
+// we can still manually reassign a user's name later. 
+
+billy.name = "William";
+
+
+/*************************************************/
+
+"This" 
+
+- 'This' is referred to the current object whose method or constructor is being called. 
+
+- You can refer to any field or method of the current object. 
+
+public class User {
+  public String name; 
+  
+  // constructor (notice 'this') 
+
+  public User(String name) {
+    this.name = name; 
+  }
+}
