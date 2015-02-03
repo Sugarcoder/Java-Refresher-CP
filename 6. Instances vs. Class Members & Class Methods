@@ -1,0 +1,41 @@
+Instance vs. Class Members
+
+- Static fields are called on the class name itself. 
+- Instance fields are called on an individual instance of a class. 
+
+Example: 
+
+public class User {
+  String name;       // instance
+  static int maxNameLength = 20;
+  
+  // constructor and other methods
+}
+
+System.out.println(User.maxNameLength);     // 20
+User billy = new User("Billy"); 
+System.out.println(billy.name);    // Billy
+
+
+/***************************************/
+
+Instance vs. Class Methods
+
+- Methods can be defined as 'static' so that the method is shared across all instances and invoked on the class.
+
+Example: 
+
+public class User {
+  static void sayHello() {
+    System.out.println("Hello!");
+  }
+  
+  void sayName() {
+    System.out.println("My name is " + name);
+  }
+}
+
+
+User billy = new User("Billy"); 
+User.sayHello();        // Hello!
+User.sayName();         // My name is Billy
