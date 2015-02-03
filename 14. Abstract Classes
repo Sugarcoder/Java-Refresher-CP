@@ -7,7 +7,9 @@
 
 - Can contain abstract methods, which are methods with name and arguments, but no implementation. 
 
-- Like regular classes, but they can include abstract methods (with no implementation) and cannot be created directly (only subclassesd). */ 
+- Like regular classes, but they can include abstract methods (with no implementation) 
+  and cannot be created directly (only subclassesd). 
+*/ 
 
 
 // Example:
