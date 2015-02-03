@@ -1,0 +1,28 @@
+- Classes are a definition explaining to the program about the attributes and actions of a particular noun. 
+
+- Fields = adjectives (description) 
+- Methods = verb (action) 
+
+Examples of classes: 
+- Strings - Methods: length(), compareTo(String)
+- User - Fields: name, birthday, tagline
+        Methods: followUser(user)
+- Book - Fields: title, ISBN, numPages
+         Methods: exportPDF(fileName)
+         
+Example (simple class for 'User'): 
+
+public class User {
+  // fields 
+
+  String name; 
+  String pitrureURL; 
+  String email; 
+  
+  // methods
+  
+  public void printName() {
+    System.out.println("My name is: " + name); 
+  } 
+}
+
