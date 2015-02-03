@@ -10,7 +10,7 @@
 
 /**********************************/ 
 
-ArrayList: 
+ARRAYLIST
 
 - A dynamically-sized array of items that can have items added or removed. 
 
@@ -41,3 +41,39 @@ for(int i = 0; i<StringList.size(); i++) {
 stringList.remove(0);
 
 System.out.println("ArrayList is " + stringList.size() + "items long!"); 
+
+
+/*************************************/ 
+
+HASHMAP
+
+// A collection of values which are not kept in order, but are instead kept by "associating" each value to a 'key'. 
+
+// Example:
+
+HashMap<String, Integer> ratingMap = new HashMap<String, Integer>(); 
+ratingMap.put("Dark Knight", 5);
+ratingMap.put("Piranha 3D", 1);
+
+/* The most important thing is to determine the correct 'key' and 'value'. 
+The key should be the data you want to be able to access by, 
+and the value should be the resulting attached data. 
+Example: phone directory (key is the name, value is the number) */
+
+// More Examples: 
+
+// Store ratings for movies
+
+HashMap<String, Integer> ratingMap = new HashMap<String, Integer>();
+ratingMap.put("Dark Kngiht", 5);
+ratingMap.put("Spiderman 2", 3);
+ratingMap.put("Piranha 3D", 1);
+System.out.println("Dark knight is rated a " + ratingMap.get("Dark Kngiht"));
+
+// Phone numbers of people
+
+HashMap<String, Integer> personMap = new HashMap<String, String>(); 
+ratingMap.put("Bob", "415-123-4567");
+ratingMap.put("Bill", "415-567-1235");
+ratingMap.put("Joel", "650-740-2095");
+System.out.println("Bob can be reached at " + ratingMap.get("Bob"));
