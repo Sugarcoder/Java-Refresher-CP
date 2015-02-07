@@ -1,7 +1,7 @@
 // EXCEPTIONS
 
 /* 
-- An object that represents an unexpected event within our application. 
+- An object that represents an unexpected event within the application. 
 
 - Creating an exception object and having it passed to the Java runtime is called, "throwing an exception". 
 
