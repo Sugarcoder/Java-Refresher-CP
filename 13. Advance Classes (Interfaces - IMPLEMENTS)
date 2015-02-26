@@ -1,4 +1,4 @@
-// Interfaces
+// Interfaces (IMPLEMENTS)
 
 /* Interface = A series of methods with empty bodies that can be 'implemented'
 within a class definition. Once implemented, that class has to define every method that is contained within the interface.  */ 
