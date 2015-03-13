@@ -91,7 +91,7 @@ System.out.println(sum);    // 11
 
 // Example: 
 
-public String madLibs(String adj, String noung) {
+public String madLibs(String adj, String noun) {
 	String sentence = "Is that a " + adj + "" + noun + "?";
 	return sentence;
 }
